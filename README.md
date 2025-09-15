@@ -1,4 +1,4 @@
-#Activity A1
+# Activity A1
 
 #include <iostream>
 using namespace std;
