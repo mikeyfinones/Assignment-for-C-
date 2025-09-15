@@ -40,13 +40,13 @@ int main() {
 using namespace std;
 
 int main() {
-    int s1 = 85, s2 = 92, s3 = 77;  // chosen integers
+    int s1 = 85, s2 = 92, s3 = 77;
 
     int sum = s1 + s2 + s3;
 
     cout << "Raw average (implicit): " << (sum / 3) << endl;
     cout << "Correct average (explicit cast): "
-         << static_cast<double>(sum) / 3 << endl;
+         << static cast<double>(sum) / 3 << endl;
 
     return 0;
 }
@@ -76,7 +76,6 @@ int main() {
 
 #include <iostream>
 #include <iomanip>
-#include <algorithm>
 using namespace std;
 
 int main() {
@@ -89,7 +88,6 @@ int main() {
     double gross = regHours * rate + otHours * rate * 1.5;
     double tax = 0.18 * gross;
     double benefits = 35.0;
-    double net = gross - tax - benefits;
 
     cout << fixed << setprecision(2);
     cout << "Regular: " << regHours << ", Overtime: " << otHours << endl;
@@ -104,7 +102,6 @@ int main() {
 ## Activity D
 
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -113,14 +110,11 @@ int main() {
     cout << "Enter items and price: ";
     cin >> items >> price;
 
-    // BUG 1 fixed: initialized total
     double total = items * price;
 
-    // BUG 2 fixed: integer division corrected with cast
     int discountPercent = 15;
     double discount = total * (static_cast<double>(discountPercent) / 100.0);
 
-    // BUG 3 fixed: shipping calculation clarified
     double shipping = 5 + 2 * items;
     double afterDiscount = total - discount;
     if (afterDiscount >= 100.0) shipping = 0;
