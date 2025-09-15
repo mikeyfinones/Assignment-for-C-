@@ -1,4 +1,4 @@
-# Activity A1
+## Activity A1
 
 #include <iostream>
 using namespace std;
@@ -34,7 +34,7 @@ int main() {
     return 0;
 }
 
-### Activity B1
+## Activity B1
 
 #include <iostream>
 using namespace std;
@@ -51,7 +51,7 @@ int main() {
     return 0;
 }
 
-#### Activity B2
+## Activity B2
 
 #include <iostream>
 #include <iomanip>
@@ -72,7 +72,7 @@ int main() {
     return 0;
 }
 
-##### Acitivity C
+## Acitivity C
 
 #include <iostream>
 #include <iomanip>
@@ -101,7 +101,7 @@ int main() {
     return 0;
 }
 
-###### Activity D
+## Activity D
 
 #include <iostream>
 #include <iomanip>
